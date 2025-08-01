@@ -1,0 +1,10 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - eu-west-3
+filters:
+  tag:Role: ansible-target
+keyed_groups:
+  - key: tags.Name
+    prefix: ec2
+hostnames:
+  - public-ip-address

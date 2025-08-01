@@ -275,7 +275,7 @@ Meet the **EC2 Creation Script**: Your hassle-free solution for quick and easy i
 
 ### GitHub Repository Script
 
-The complete automation script is available at: **[MyScripts - EC2 Instance Creation](https://github.com/Dhanunjay-Reddy/MyScripts/blob/main/ec2InstanceCreation.sh)**
+The complete automation script is available at: **[MyScripts - EC2 Instance Creation](https://github.com/hyper-ayoub/Infrastructure-Automation-with-Ansible/blob/main/ec2-instance-setup-using-aws-cli/ec2InstanceCreation.sh)**
 
 This script provides automated EC2 instance creation with all the necessary components integrated.
 

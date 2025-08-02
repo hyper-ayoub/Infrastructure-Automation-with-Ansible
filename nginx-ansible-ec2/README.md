@@ -1,4 +1,5 @@
 # Streamlining Nginx Deployment with Ansible on AWS EC2 Instances
+<img width="1536" height="1024" alt="Copilot_20250802_122016" src="https://github.com/user-attachments/assets/0fca37b4-f86c-4782-bc19-c2e7498fea49" />
 
 ## Introduction
 

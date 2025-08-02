@@ -190,7 +190,42 @@ Inside the controller:
     **`prefix: ec2`**  
 **`hostnames:`**  
   **`- public-ip-address`**
+## ⚠️ IMPORTANT CHANGES YOU MUST MAKE:
 
+### 1. Update AMI IDs in main.tf
+Replace the AMI IDs with the correct Ubuntu 22.04 AMI for your region.
+
+### 2. Update Provider Configuration in main.tf
+```hcl
+provider "aws" {
+  region  = var.region
+  profile = "default"
+}
+```
+
+### 3. Update variables.tf
+```hcl
+variable "region" { 
+  default = "eu-west-3"  # Change to your preferred region
+}
+variable "key_name" { 
+  default = "devops-key"  # Change to your own key name
+}
+```
+
+### 4. Update ansible/aws_ec2.yml
+```yaml
+plugin: amazon.aws.aws_ec2
+regions:
+  - eu-west-3  # Change to match your region
+filters:
+  tag:Role: ansible-target
+keyed_groups:
+  - key: tags.Name
+    prefix: ec2
+hostnames:
+  - public-ip-address
+```
 Make sure to install the plugin:
 
 **`ansible-galaxy collection install amazon.aws`**

@@ -163,6 +163,7 @@ You need:
 `terraform init`  
 `terraform apply`
 
+<img width="1548" height="540" alt="Capture d’écran 2025-08-01 152826" src="https://github.com/user-attachments/assets/595f03dd-d24b-43c8-9cda-dfdb42f5b8a5" />
 **5\. Connect to Controller EC2**
 
 `ssh -i ../keys/id_rsa ubuntu@<controller_public_ip>`
@@ -231,6 +232,7 @@ Make sure to install the plugin:
 **`ansible-galaxy collection install amazon.aws`**
 
 **7\. Ansible Playbook to Install Docker**
+
 
 ###  **`ansible/install_docker.yml`**
 

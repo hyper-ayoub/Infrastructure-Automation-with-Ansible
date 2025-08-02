@@ -1,4 +1,5 @@
 # Complete Guide: Creating EC2 Instances Using AWS CLI
+<img width="1536" height="1024" alt="Copilot_20250802_122335" src="https://github.com/user-attachments/assets/eb00ab23-e36e-4119-97b7-dc30cccb93d5" />
 
 ## Table of Contents
 1. [Create EC2 instance Using AWS CLI](#1-create-ec2-instance-using-aws-cli)

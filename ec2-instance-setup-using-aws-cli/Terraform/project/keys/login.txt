@@ -1,1 +1,3 @@
-ssh -i ../keys/id_rsa ubuntu@51.44.41.71
+Controller ip server 
+
+ssh -i ../keys/id_rsa ubuntu@your_ip

@@ -23,6 +23,7 @@
 <img width="1536" height="1024" alt="BCO 04705859-2a62-4c8a-9628-6491b6eb2d3a" src="https://github.com/user-attachments/assets/fd61a10a-52d9-4e3b-97ae-7a3c4fab3bea" />
 
   
+
   
   **Create a VPC with networking components**  
   **Launch a control EC2 with Ansible installed**  

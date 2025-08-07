@@ -1,0 +1,39 @@
+Server Setup Guide
+
+🦾 Infrastructure Setup
+Create 4 servers:
+1 server for global ubuntu (Ansible Master)
+Servers 1, 2, 3 for others
+Same public key for all
+Allow SSH and HTTPS
+PUBLIC IP
+
+🦾 Connection ssh -i "ansible-key.pem" ubuntu@ec2-35-180-232-49.eu-west-3.compute.amazonaws.com
+
+🦾 Installing Ansible on Ansible-Master
+script.sh
+
+🦾 Ansible Configuration
+sudo vim /etc/ansible/hosts
+
+[servers]
+server1 ansible_host=server1ip
+server2 ansible_host=server2ip
+server3 ansible_host=server3ip
+[servers:vars] ansible_python_interpreter=/usr/bin/python3 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/.ssh/ansible-key.pem
+
+
+🦾 Copy Public Key to Ubuntu Server
+cp /mnt/c/Users/hp/.ssh/ansible-key.pem ~/.ssh/
+chmod 600 ~/.ssh/ansible-key.pem
+scp -i ~/.ssh/ansible-key.pem ~/.ssh/ansible-key.pem ubuntu@13.38.70.21:/home/ubuntu/.ssh/
+
+🦾 Ansible Playbook for Nginx Installation
+
+🦾 Web Content Deployment
+
+🦾 Ansible Playbook for Web Content Deployment
+
+🦾 Running the Ansible Playbook
+
+🦾 Verification Open a web browser and navigate to http://<server3-public-ip>. You should see your beautiful static page displayed.
